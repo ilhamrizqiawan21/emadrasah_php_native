@@ -24,12 +24,16 @@ Sistem Informasi Manajemen Madrasah berbasis PHP Native.
 
 ## 📦 Instruksi Instalasi
 
-1. **Clone atau Copy Project:**
-   Pastikan project berada di direktori web server Anda (contoh: `C:/laragon/www/emadrasah`).
+1. **Clone repository:**
+   ```bash
+   git clone https://github.com/ilhamrizqiawan21/emadrasah_php_native.git
+   cd emadrasah_php_native
+   ```
+   Tempatkan project di document root web server jika menggunakan XAMPP atau Laragon.
 
 2. **Setup Database:**
    - Buat database baru bernama `madrasah_db`.
-   - Import file SQL yang tersedia (disarankan menggunakan schema terbaru dari `emadrasah2/madrasah_db (4).sql` jika ingin data awal, namun struktur native sudah disesuaikan secara mandiri selama proses rebuild).
+   - Import schema SQL yang tersedia di repository. Pastikan file tersebut hanya digunakan pada lingkungan pengembangan dan tidak memuat data pribadi.
    - *Catatan:* Jika Anda menggunakan database kosong, pastikan tabel `users`, `siswa`, `surat_masuk`, `surat_keluar`, `sarana_prasarana`, `peminjaman_sarana`, `pemeliharaan_sarana`, `template_surat`, `kelas`, `mapels`, dan `gurus` sudah tersedia.
 
 3. **Konfigurasi Koneksi:**
@@ -42,7 +46,7 @@ Sistem Informasi Manajemen Madrasah berbasis PHP Native.
    ```
 
 4. **Akses Aplikasi:**
-   Buka browser dan akses `http://localhost/emadrasah`.
+   Buka browser dan akses `http://localhost/emadrasah_php_native`.
 
 ## 🔑 Akun Default
 Silakan cek tabel `users` untuk email dan password yang tersedia. Password dienkripsi menggunakan `password_hash()`.
@@ -55,4 +59,4 @@ Silakan cek tabel `users` untuk email dan password yang tersedia. Password dienk
 - `uploads/`: Folder penyimpanan file yang diupload (scan surat, foto siswa, dll).
 
 ---
-*Update Terakhir: 18 Juni 2026*
+*Dokumentasi diperbarui: 28 Agustus 2026*
